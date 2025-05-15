@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: custom_openfold_utils
+Version: 1.0
+Summary: Utilities for running customized version of openfold optimized for generating alternative conformations
+Author: Ishan Taneja
+Author-email: itaneja@scripps.edu
+License: MIT
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: biopython>=1.78
+Requires-Dist: pymol>=2.3.0
+Requires-Dist: openmm>=7.5.0
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pdbfixer
+Requires-Dist: dm-tree
+Requires-Dist: modelcif

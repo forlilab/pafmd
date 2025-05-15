@@ -1,0 +1,76 @@
+{
+    
+    "finetuning-method_SAID": {
+        "module_config_0": {
+            "module_to_update": ["evoformer","extra_msa_stack"],
+            "layer_to_update": ["all"],
+            "intrinsic_dim": 10000,
+            "projection_index": "layer"
+            },
+        "module_config_1": {
+            "module_to_update": ["evoformer","extra_msa_stack"],
+            "layer_to_update": ["msa_att_row.mha.linear_q","msa_att_row.mha.linear_k","msa_att_row.mha.linear_v","msa_att_row.mha.linear_o",
+            "msa_att_col._msa_att.mha.linear_q","msa_att_col._msa_att.mha.linear_k","msa_att_col._msa_att.mha.linear_v","msa_att_col._msa_att.mha.linear_o", 
+            "outer_product_mean.linear_1", "outer_product_mean.linear_2", "pair_stack.tri_mul_out.linear_ab_p", "pair_stack.tri_mul_in.linear_ab_p", 
+            "pair_stack.tri_att_start.mha.linear_q", "pair_stack.tri_att_start.mha.linear_k", "pair_stack.tri_att_start.mha.linear_v", "pair_stack.tri_att_start.mha.linear_o",
+            "pair_stack.tri_att_end.mha.linear_q", "pair_stack.tri_att_end.mha.linear_k", "pair_stack.tri_att_end.mha.linear_v", "pair_stack.tri_att_end.mha.linear_o"],
+            "intrinsic_dim": 10000,
+            "projection_index": "layer"
+            }
+        },
+
+    "finetuning-method_standard": {
+        "module_config_0": {
+            "module_to_update": ["evoformer"],
+            "layer_to_update": ["all"]
+            }
+    },
+
+    "hyperparameter": {
+        "train": {
+            "hp_config_0": {
+                "lr": 1e-3,
+                "max_epochs": 50,
+                "initial_scaling_factor_candidate": [100]
+            },
+            "hp_config_1": {
+                "lr": 1e-2,
+                "max_epochs": 10,
+                "initial_scaling_factor_candidate": [10]
+            },
+            "hp_config_2": {
+                "lr": 5e-2,
+                "max_epochs": 10,
+                "initial_scaling_factor_candidate": [2]
+            }
+        },
+        "rw": {
+            "hp_config_0": {
+                "bootstrap_tuning_acceptance_threshold": 80e-2,
+                "bootstrap_tuning_threshold_ub_tolerance": 20e-2,
+                "bootstrap_tuning_threshold_lb_tolerance": 10e-2,
+                "rw_tuning_acceptance_threshold": 75e-2,
+                "rw_tuning_acceptance_threshold_ub_tolerance": 10e-2,
+                "rw_tuning_acceptance_threshold_lb_tolerance": 10e-2,
+                "cov_type": "full",
+                "rw_type": "vanila"
+            },  
+            "hp_config_1": {
+                "bootstrap_tuning_acceptance_threshold": 80e-2,
+                "bootstrap_tuning_threshold_ub_tolerance": 20e-2,
+                "bootstrap_tuning_threshold_lb_tolerance": 10e-2,
+                "rw_tuning_acceptance_threshold": 90e-2,
+                "rw_tuning_acceptance_threshold_ub_tolerance": 5e-2,
+                "rw_tuning_acceptance_threshold_lb_tolerance": 10e-2,
+                "cov_type": "full",
+                "rw_type": "vanila"
+            } 
+        }
+           
+    }       
+
+}
+
+
+
+    

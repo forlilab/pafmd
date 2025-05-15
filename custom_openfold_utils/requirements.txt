@@ -1,0 +1,15 @@
+Bio==1.8.0
+cElementTree==1.0.2-20050302
+dm_tree==0.1.6
+elementtree==1.2.6-20050316
+lxml==4.6.3
+modelcif==0.8
+numpy==1.22.4
+OpenMM==7.5.1
+pandas==2.0.3
+pdbfixer==1.8.1
+pymol==0.1.0
+requests==2.31.0
+scipy==1.6.3
+simtk==0.1.0
+tree==0.2.4
