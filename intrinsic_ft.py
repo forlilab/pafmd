@@ -7,7 +7,7 @@ import numpy as np
 from torch import nn
 from torch.nn import functional as F
 from typing import Tuple, Set
-from fwh.fwh_cuda import fast_walsh_hadamard_transform as fast_walsh_hadamard_transform_cuda
+from fwh_cuda import fast_walsh_hadamard_transform as fast_walsh_hadamard_transform_cuda
 import contextlib 
 import re
 

@@ -147,7 +147,7 @@ Scripts to run inference via MSA subsampling (AFSample2), AF-RW (AlphaFold-Rando
 
 - [openfold](https://github.com/aqlaboratory/openfold/blob/main/environment.yml)
 - [mkdssp](https://ssbio.readthedocs.io/en/latest/instructions/dssp.html)
-- [CUDA modules for intrinsic dimensionality](https://github.com/r-three/t-few/blob/114deced63ae722a368e06cb08ea956b20c393a6/src/intrinsic_said_setup.py)
+- CUDA modules for intrinsic dimensionality (install via `python intrinsic_said_setup.py develop --user`)
 - `custom_openfold_utils` (install locally via pip)
 
 
